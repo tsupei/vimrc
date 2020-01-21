@@ -69,5 +69,5 @@ command EditBash	:edit	~/.bashrc
 " Mappings
 "
 map <C-t> :echo &shiftwidth<CR>
-
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
