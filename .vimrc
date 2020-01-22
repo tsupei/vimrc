@@ -72,4 +72,9 @@ command EditBash	:edit	~/.bashrc
 "
 map <C-t> :echo &shiftwidth<CR>
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
+inoremap jh <Esc>:
+nnoremap jh <ESC>:
+inoremap jj <ESC>
+nnoremap jj <ESC>
+
 
