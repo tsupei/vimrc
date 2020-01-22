@@ -27,6 +27,10 @@ Plug 'vim-python/python-syntax'
 
 Plug 'morhetz/gruvbox'
 
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 "vimtex settings
@@ -73,6 +77,10 @@ let g:python_highlight_all = 1
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
+
+" airline settings
+"
+let g:airline_theme='gruvbox'
 
 " Commands
 "
