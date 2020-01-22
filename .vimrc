@@ -25,6 +25,8 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'vim-python/python-syntax'
 
+Plug 'morhetz/gruvbox'
+
 call plug#end()
 
 "vimtex settings
@@ -61,6 +63,16 @@ filetype plugin indent on			"enable file type detection
 " IndentLine
 "
 let g:indentLine_char = '¦'
+
+" python-syntax
+"
+let g:python_highlight_all = 1
+
+" gruvbox settings
+"
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
 
 " Commands
 "
