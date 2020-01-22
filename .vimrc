@@ -23,6 +23,8 @@ Plug 'tmhedberg/SimpylFold'
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'vim-python/python-syntax'
+
 call plug#end()
 
 "vimtex settings
