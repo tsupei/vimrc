@@ -21,6 +21,8 @@ Plug 'Yggdroot/indentLine'
 
 Plug 'tmhedberg/SimpylFold'
 
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 "vimtex settings
