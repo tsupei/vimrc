@@ -31,6 +31,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'vim-airline/vim-airline'
 
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 "vimtex settings
