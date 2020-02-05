@@ -35,6 +35,9 @@ Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
+" YouCompleteMe settings
+let g:ycm_autoclose_preview_window_after_completion=1
+
 "vimtex settings
 "
 let g:tex_flavor='latex'
