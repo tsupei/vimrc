@@ -33,6 +33,8 @@ Plug 'vim-airline/vim-airline'
 
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 " YouCompleteMe settings
