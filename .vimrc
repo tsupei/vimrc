@@ -23,8 +23,6 @@ Plug 'tmhedberg/SimpylFold'
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'vim-python/python-syntax'
-
 Plug 'morhetz/gruvbox'
 
 Plug 'vim-airline/vim-airline-themes'
@@ -39,15 +37,14 @@ call plug#end()
 
 " YouCompleteMe settings
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py'
 
 "vimtex settings
 "
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
-set conceallevel=2
 let g:tex_conceal='abdgm'
-set wrap
 
 "UltiSnips settings
 "
@@ -58,16 +55,17 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 "Default settings of vim 
 "
-set nu								"enable line numbers
-set backspace=indent,eol,start		"allow backspacking over everything in insert mode
-set ruler							"show the cursor position all the time
-set mouse=a							"enable the mouse
-set showmode						"show the mode
-set laststatus=2					"always put a status line in
-set ch=2							"set command line 2 lines high
-set nowrap							"no line wrapping
-set tabstop=4						"tabs = 4 spaces
-set hlsearch						"hilight search
+:set nu								"enable line numbers
+:set backspace=indent,eol,start		"allow backspacking over everything in insert mode
+:set ruler							"show the cursor position all the time
+:set mouse=a							"enable the mouse
+:set showmode						"show the mode
+:set laststatus=2					"always put a status line in
+:set ch=2							"set command line 2 lines high
+:set nowrap							"no line wrapping
+:set tabstop=4						"tabs = 4 spaces
+:set hlsearch						"hilight search
+:set wrap
 
 syntax on							"enable syntax highlighting
 filetype plugin indent on			"enable file type detection
@@ -75,10 +73,6 @@ filetype plugin indent on			"enable file type detection
 " IndentLine
 "
 let g:indentLine_char = '¦'
-
-" python-syntax
-"
-let g:python_highlight_all = 1
 
 " gruvbox settings
 "
@@ -90,7 +84,10 @@ colorscheme gruvbox
 "
 let g:airline_theme='gruvbox'
 
-" Commands
+" Disable Concealing
+let g:indentLine_setConceal = 0
+
+"" Commands
 "
 " Easy edit/open commands
 "
