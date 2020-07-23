@@ -78,6 +78,7 @@ let g:indentLine_char = '¦'
 "
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark = 'hard'
+:set bg=dark
 colorscheme gruvbox
 
 " airline settings
