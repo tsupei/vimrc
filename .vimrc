@@ -108,3 +108,5 @@ nnoremap <S-Left> :vertical resize -1<CR>
 nnoremap <S-Right> :vertical resize +1<CR>
 nnoremap <S-UP> :resize +1<CR>
 nnoremap <S-Down> :resize -1<CR>
+nnoremap jy "+y
+nnoremap jp "+p
