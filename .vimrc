@@ -110,3 +110,6 @@ nnoremap <S-UP> :resize +1<CR>
 nnoremap <S-Down> :resize -1<CR>
 nnoremap jy "+y
 nnoremap jp "+p
+
+autocmd FileType python map <buffer> rp :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> rp <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
