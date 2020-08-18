@@ -100,16 +100,14 @@ command EditBash	:edit	~/.bashrc
 "
 map <C-t> :echo &shiftwidth<CR>
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
-inoremap jh <ESC>:
-nnoremap jh <ESC>:
 inoremap jj <ESC>
-nnoremap jj <ESC>
+nnoremap ; :
 nnoremap <S-Left> :vertical resize -1<CR>
 nnoremap <S-Right> :vertical resize +1<CR>
 nnoremap <S-UP> :resize +1<CR>
 nnoremap <S-Down> :resize -1<CR>
-nnoremap jy "+y
-nnoremap jp "+p
+nnoremap uy "+y
+nnoremap up "+p
 
-autocmd FileType python map <buffer> rp :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> rp <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python map <buffer> <leader>p :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <leader>p <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
