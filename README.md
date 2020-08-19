@@ -5,10 +5,10 @@
 
 [Reference(YouCompleteMe)](https://github.com/ycm-core/YouCompleteMe#linux-64-bit)
 
-	```bash
+```bash
 apt install build-essential cmake vim python3-dev
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --all
-	```
+```
 
 
