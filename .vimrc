@@ -106,8 +106,8 @@ nnoremap <S-Left> :vertical resize -1<CR>
 nnoremap <S-Right> :vertical resize +1<CR>
 nnoremap <S-UP> :resize +1<CR>
 nnoremap <S-Down> :resize -1<CR>
-nnoremap uy "+y
-nnoremap up "+p
+nnoremap <S-y> "+y
+nnoremap <S-p> "+p
 
 autocmd FileType python map <buffer> <leader>p :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <leader>p <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
