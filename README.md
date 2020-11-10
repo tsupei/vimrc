@@ -11,4 +11,18 @@ cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --all
 ```
 
+# Install flake8
 
+Please install flake8 in your computer
+
+macos
+```
+brew install flake8
+```
+
+Set config of flake8 in `~/.config/flake8`
+
+```
+[flake8]
+max-line-height = 120
+```

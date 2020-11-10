@@ -33,6 +33,8 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'preservim/nerdcommenter'
 
+Plug 'nvie/vim-flake8'
+
 call plug#end()
 
 " YouCompleteMe settings
@@ -66,6 +68,16 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 :set tabstop=4						"tabs = 4 spaces
 :set hlsearch						"hilight search
 :set wrap
+
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  "setglobal bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
 
 syntax on							"enable syntax highlighting
 filetype plugin indent on			"enable file type detection
@@ -111,3 +123,4 @@ nnoremap <S-p> "+p
 
 autocmd FileType python map <buffer> <leader>p :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <leader>p <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python map <buffer> <S-f> :call flake8#Flake8()<CR>
