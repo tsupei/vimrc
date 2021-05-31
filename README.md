@@ -26,3 +26,7 @@ Set config of flake8 in `~/.config/flake8`
 [flake8]
 max-line-height = 120
 ```
+
+# Install Ultisnips
+
+[Ultisnips](https://github.com/SirVer/ultisnips)
